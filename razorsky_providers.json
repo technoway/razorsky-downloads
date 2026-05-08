@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "last_updated": "2026-04-26",
+
+  "providers": {
+    "groq": {
+      "enabled": true,
+      "url": "https://api.groq.com/openai/v1/chat/completions",
+      "model": "llama-3.1-8b-instant",
+      "label": "Groq (free, fast)",
+      "daily_limit": 14400,
+      "get_key_url": "https://console.groq.com"
+    },
+    "gemini": {
+      "enabled": true,
+      "url": "https://generativelanguage.googleapis.com/v1beta/models/",
+      "model": "gemini-2.5-flash",
+      "label": "Gemini (free, accurate)",
+      "daily_limit": 1000,
+      "get_key_url": "https://aistudio.google.com/app/apikey"
+    },
+    "acoustid": {
+      "key": "REPLACE_WITH_YOUR_ACOUSTID_APP_KEY"
+    }
+  },
+
+  "app": {
+    "min_version": "1.0.0",
+    "update_url": "https://razorsky.com/download",
+    "message": ""
+  }
+}
